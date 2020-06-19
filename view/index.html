@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" type="text/css" href="../lib/css/site.css">
+    <link rel="stylesheet" href="../lib/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../lib/css/site.css" />
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="ordersReg" class="col coluna">
+                <div class="form-group">
+                    <label for="clientName" class="">Cliente</label>
+                    <div class="container-fluid">
+                        <input type="text" class="container-fluid" id="clientName" placeholder="Nome Cliente">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="endereco">Endereço</label>
+                    <div class="container-fluid">
+                        <input type="text" class="container-fluid" id="endereco" placeholder="Endereço para entrega">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contato</label>
+                    <div class="container-fluid">
+                        <input type="text" class="container-fluid" id="contact" placeholder=" (88) 98888-8888">
+                    </div>
+                </div>
+
+                <div id="pedido" class="form-group row">
+                    <div id="radOp" class="form-group">
+                        <select name="pedido" id="orderName">
+                            <option value="feijoada">Feijoada</option>
+                            <option value="feijoada">Mocoto</option>
+                        </select>
+                        <div class="form-check">
+                            <input type="radio" id="sizeP" class="form-check-input" name="sizeOp" value="500mL">
+                            <label for="sizeP"> 500 mL </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="sizeM" class="form-check-input" name="sizeOp" value="750mL">
+                            <label for="sizeM"> 750 mL </label>
+                        </div>
+                        <div class="form-check">
+                            <input id="sizeG" type="radio" for="sizeG" class="form-check-input" name="sizeOp" value="1000mL">
+                            <label for="sizeG"> 1000 mL </label>
+                        </div>
+                        <button id="orderAddBtn" class="btn btn-sm btn-secondary">Add</button>
+                    </div>
+
+                    <div class="order-list col">
+                        <ul id="orderList" >
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <button id="genOrder" class="btn btn-primary">Enviar</button>
+            </div>
+
+            <div id="ordersQ" class="col coluna">
+                <h5>Fila de Pedidos</h5>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome Cliente</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">R$ 40,00</h6>
+                        <p class="card-text">Endereço da Desgraça, ao Lado da Casa do Caralho, Casa do Satanás</p>
+                        <button class="btn btn-danger">Pronto!</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="ordersShipped" class="col coluna">
+                
+                <h5>Pedidos Finalizados </h5>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome Cliente</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">R$ 40,00</h6>
+                        <p class="card-text">Endereço da Desgraça, ao Lado da Casa do Caralho, Casa do Satanás</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="../lib/js/index.js"></script>
+
+</html>
